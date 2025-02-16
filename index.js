@@ -15,6 +15,10 @@ io.on("connection", (socket) => {
     io.emit("chat message", msg); // Broadcast message
   });
 
+
+
+  
+
   socket.on("disconnect", () => {
     console.log("User disconnected:", socket.id);
   });
