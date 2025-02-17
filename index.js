@@ -4,8 +4,6 @@ const socketIo = require("socket.io");
 
 const app = express();
 const server = http.createServer(app);
-
-
 const io = socketIo(server);
 
 app.use(express.static("public"));
